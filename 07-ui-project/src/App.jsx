@@ -6,31 +6,31 @@ const App = () => {
   const users = [
     {
       img: 'https://plus.unsplash.com/premium_photo-1672691612717-954cdfaaa8c5?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      intro: '',
+      intro: 'Prime customers, that have access to bank credit and are satisfied with the current product',
       color:'royalblue',
       tag: 'Satisfied'
     },
     {
       img: 'https://images.picxy.com/cache/2019/7/19/b0d3e7bd8b6ac56e89b1163731a280cc.jpg',
       color:'lightseagreen',
-      intro: '',
+      intro: 'Individuals with limited access to formal financial services, relying on alternative financial solutions for daily transactions.',
       tag: 'Underserved'
     },
     {
       img: 'https://www.varunpatelphotography.com/blog/wp-content/uploads/2020/06/265A3263.jpg',
       color:'orange',
-      intro: '',
+      intro: 'Customers from near-prime and sub-prime segments with no access to bank credit',
       tag: 'Underbanked'
     },
     {
       img: 'https://images.unsplash.com/photo-1600275669439-14e40452d20b?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       color:'pink',
-      intro: '',
+      intro: 'Tech-savvy customers who frequently use mobile and online banking solutions for their financial needs.',
       tag: 'Underwear'
     },
     {
       img:'https://images.unsplash.com/photo-1498758536662-35b82cd15e29?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      intro:'',
+      intro:'Customers with limited or no access to formal banking products.',
       color:'black',
       tag:'Average'
     }
