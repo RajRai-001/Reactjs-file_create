@@ -139,25 +139,7 @@ https://picsum.photos/
 
 ---
 
-# 📸 Screenshots
 
-### Home Page
-
-_Add screenshot here_
-
----
-
-### Gallery
-
-_Add screenshot here_
-
----
-
-### Search
-
-_Add screenshot here_
-
----
 
 # 💡 Future Improvements
 
@@ -173,15 +155,6 @@ _Add screenshot here_
 
 ---
 
-# 👨‍💻 Author
-
-**Raj Rai**
-
-GitHub:
-https://github.com/yourusername
-
-LinkedIn:
-https://linkedin.com/in/yourprofile
 
 ---
 
