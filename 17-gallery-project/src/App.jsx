@@ -13,6 +13,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
 
+  // Fetch Images
   const getPhotos = async () => {
     try {
       setLoading(true);
@@ -33,23 +34,48 @@ const App = () => {
     getPhotos();
   }, [page]);
 
+  // Search Button
+  const handleSearch = () => {
+    const value = search.trim();
+
+    // Empty input
+    if (value === "") return;
+
+    // If number → Jump to page
+    if (!isNaN(value)) {
+      const pageNumber = Number(value);
+
+      if (pageNumber >= 1) {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+
+        setPage(pageNumber);
+        setSearch("");
+      }
+    }
+
+    // If text
+    // Don't do anything.
+    // filteredPhotos automatically filters authors.
+  };
+
+  // Filter Authors
   const filteredPhotos = photos.filter((photo) =>
     photo.author.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-black to-slate-950 text-white">
-      
-      {/* Navbar */}
+
       <Navbar />
 
-      {/* Search */}
       <SearchBar
         search={search}
         setSearch={setSearch}
+        handleSearch={handleSearch}
       />
-
-      {/* Gallery */}
 
       <div className="max-w-7xl mx-auto px-6 pb-10">
 
@@ -92,19 +118,16 @@ const App = () => {
 
       </div>
 
-      {/* Pagination */}
-
       <Pagination
-       page={page}
-      setPage={setPage}
-     />
+        page={page}
+        setPage={setPage}
+      />
 
-         <footer className="text-center py-6 text-gray-400 border-t border-white/10">
-         <p>© 2026 Photo Gallery | Built by Raj Rai</p>
-         </footer>
+      <footer className="text-center py-6 text-gray-400 border-t border-white/10">
+        <p>© 2026 Photo Gallery | Built by Raj Rai</p>
+      </footer>
+
     </div>
-    
-    
   );
 };
 
